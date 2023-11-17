@@ -1,0 +1,49 @@
+	   __________________________________________________
+
+	     WEBSITE SPIDER FOR DR. SUDARSHAN S. CHAWATHE'S
+			      COURSE-SITES
+
+			    Tristan Zippert
+	   __________________________________________________
+
+
+
+
+
+About
+=====
+
+  This is a code repository for a website spider that downloads all
+  `.PDF` files associated with a Chaw course to a given folder.
+
+
+Requirements
+============
+
+  - Python 3.6
+  - Python Requests
+
+
+File Listings
+=============
+
+  - `main.py` : Python file for the website spider to scrape Dr.Chaws
+    website.
+
+
+Arguments
+=========
+
+  - "--website" : Dr.Chaw's current website
+  - "--course" : This can be either `mat`, `cos`, or `hon` followed by
+    the course number. Default is `cos350`
+  - "--save_folder" : Folder directory that stores the
+    contents. Automatically creates folders if needed.
+
+
+Running
+=======
+
+  - `python main.py`: Run with default commands.
+  - 'python main.py --course cos480 --save_folder database_prev': Run
+    for `cos480` course and save to a folder called `database_prev`

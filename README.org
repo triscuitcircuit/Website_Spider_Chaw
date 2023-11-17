@@ -1,0 +1,41 @@
+#+AUTHOR: Tristan Zippert
+#+STARTUP: showeverything 
+
+#+LATEX_CLASS_OPTIONS: [11pt]
+#+LATEX_HEADER: \usepackage[margin=1in]{geometry}
+#+LATEX_HEADER: \usepackage{enumitem}
+
+#+LaTeX_HEADER: \setlist{leftmargin=0.25in,nosep}
+#+LaTeX_HEADER: \documentclass[10pt,a4paper,showtrims]{document}
+#+LaTex_HEADER: \usepackage[labelfont=bf]{caption}
+#+LaTeX_HEADER: \hypersetup{colorlinks=true, urlcolor={blue}, linkcolor={blue}}
+
+#+LATEX_HEADER: \usepackage[natbib=true]{biblatex}
+#+LATEX_HEADER: \usepackage{tikz}
+#+LATEX_HEADER: \usetikzlibrary{shapes.misc,shadows,arrows, automata, shapes.multipart, positioning}
+#+LATEX_HEADER: \usepackage[linguistics]{forest}
+
+#+LaTeX_HEADER: \usepackage{sectsty}
+#+LATEX_HEADER: \usepackage{parskip}
+
+
+#+OPTIONS: h:3
+#+OPTIONS: toc:nil num:nil
+#+STARTUP: inlineimages
+
+#+TITLE: Website Spider for Dr. Sudarshan S. Chawathe's course-sites 
+
+* About
+  This is a code repository for a website spider that downloads all `.PDF` files associated with a Chaw course to a given folder.
+* Requirements
+  - Python 3.6
+  - Python Requests
+* File Listings
+  - `main.py` : Python file for the website spider to scrape Dr.Chaws website. 
+* Arguments
+  - "--website" : Dr.Chaw's current website
+  - "--course" : This can be either `mat`, `cos`, or `hon` followed by the course number. Default is `cos350`
+  - "--save_folder" : Folder directory that stores the contents. Automatically creates folders if needed. 
+* Running
+  - `python main.py`: Run with default commands.
+  - 'python main.py --course cos480 --save_folder database_prev': Run for `cos480` course and save to a folder called `database_prev`
